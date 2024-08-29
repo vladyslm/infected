@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21078d31be0f04342ac28d32f8f9f970, type: 3}
+  m_Name: AllRoles
+  m_EditorClassIdentifier: 
+  player: {fileID: 11400000, guid: 6157521e8d417fb4b93032e0b317a569, type: 2}
+  infected: {fileID: 11400000, guid: 44ec3d85bd9e78741b4217f48aa2c72e, type: 2}
+  clean: {fileID: 11400000, guid: b00c0d351a33ef04aab3c0dabe562e89, type: 2}
+  cleaner: {fileID: 11400000, guid: f439aef2c8bcb8d4bb165e792f40f97a, type: 2}

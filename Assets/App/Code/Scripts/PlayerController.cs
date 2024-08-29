@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private void OnActionMove(InputAction.CallbackContext ctx)
     {
         _direction = ctx.ReadValue<Vector2>();
-        Debug.Log(_direction);
+        // Debug.Log(_direction);
     }
 
     private void OnActionMoveEnd(InputAction.CallbackContext _)
