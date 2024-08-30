@@ -162,5 +162,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317f7d5378e76754f82bd99458b766c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}
   role: {fileID: 11400000, guid: f439aef2c8bcb8d4bb165e792f40f97a, type: 2}
+  onCollisionAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: c0c73d0e8b0cf884d800641aa519acaf, type: 2}
+        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
