@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6209848844242566839}
   - component: {fileID: 5091086246005308722}
   - component: {fileID: 3932888518902381094}
-  - component: {fileID: 4135458455914385405}
+  - component: {fileID: 2891868074808319976}
   m_Layer: 0
   m_Name: Cleaner
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5182123582623755286}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.56, y: 2.11, z: 6.144444}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -150,7 +150,7 @@ MonoBehaviour:
   speed: 5
   rotationSpeed: 100
   upImpulse: 3
---- !u!114 &4135458455914385405
+--- !u!114 &2891868074808319976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5182123582623755286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cfd511ab0fcd6c47a3ae55f49087f5d, type: 3}
+  m_Script: {fileID: 11500000, guid: 317f7d5378e76754f82bd99458b766c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}
