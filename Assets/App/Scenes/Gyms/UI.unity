@@ -1213,96 +1213,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &1095382949
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1095382950}
-  - component: {fileID: 1095382951}
-  - component: {fileID: 1095382952}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1095382950
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095382949}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.697284, y: -5.1902246, z: 10.293743}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1095382951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095382949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73339820fd953e54cb0f84843c2ba08a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}
-  counters: {fileID: 11400000, guid: e3a6626f80acc33478e50b0f878ccbc7, type: 2}
-  onUpdateCounters:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: c34e4f1d30baa9d4d9a479292ec91131, type: 2}
-        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1095382952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095382949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d266e39d76ed600488e8682c72325318, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: c0c73d0e8b0cf884d800641aa519acaf, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1095382951}
-        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-        m_MethodName: OnInfection
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1126391238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2418,6 +2328,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4a9303008788b340bbb15855f3648aa, type: 3}
+--- !u!1001 &4371863186143605326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 112608974930428096, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_Name
+      value: Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.697284
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.1902246
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.293743
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125552623209890906, guid: 62659e1186b0aa94ca9fc4517859b7d3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62659e1186b0aa94ca9fc4517859b7d3, type: 3}
 --- !u!1001 &6367803102173970956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2510,6 +2488,6 @@ SceneRoots:
   - {fileID: 981292963}
   - {fileID: 379589947}
   - {fileID: 2005510597}
-  - {fileID: 1095382950}
+  - {fileID: 4371863186143605326}
   - {fileID: 3298110209632210012}
   - {fileID: 2062127620}
