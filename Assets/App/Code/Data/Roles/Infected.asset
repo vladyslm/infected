@@ -15,3 +15,4 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: d6ebc86a44dcba64d9dd39fd2a37eddd, type: 2}
   targets:
   - {fileID: 11400000, guid: b00c0d351a33ef04aab3c0dabe562e89, type: 2}
+  allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}

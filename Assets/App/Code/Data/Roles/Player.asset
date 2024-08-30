@@ -16,3 +16,4 @@ MonoBehaviour:
   targets:
   - {fileID: 11400000, guid: f439aef2c8bcb8d4bb165e792f40f97a, type: 2}
   - {fileID: 11400000, guid: b00c0d351a33ef04aab3c0dabe562e89, type: 2}
+  allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}

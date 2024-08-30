@@ -349,7 +349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317f7d5378e76754f82bd99458b766c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}
   role: {fileID: 11400000, guid: f439aef2c8bcb8d4bb165e792f40f97a, type: 2}
 --- !u!1 &377756057 stripped
 GameObject:
@@ -369,7 +368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317f7d5378e76754f82bd99458b766c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}
   role: {fileID: 11400000, guid: b00c0d351a33ef04aab3c0dabe562e89, type: 2}
 --- !u!1 &379589943
 GameObject:
@@ -489,7 +487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317f7d5378e76754f82bd99458b766c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}
   role: {fileID: 11400000, guid: b00c0d351a33ef04aab3c0dabe562e89, type: 2}
 --- !u!1 &424426642
 GameObject:
@@ -869,7 +866,7 @@ PrefabInstance:
     - target: {fileID: 4183863814238149865, guid: e4a9303008788b340bbb15855f3648aa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.0090666
+      value: 6.009067
       objectReference: {fileID: 0}
     - target: {fileID: 4183863814238149865, guid: e4a9303008788b340bbb15855f3648aa,
         type: 3}
@@ -945,7 +942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317f7d5378e76754f82bd99458b766c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}
   role: {fileID: 11400000, guid: 6157521e8d417fb4b93032e0b317a569, type: 2}
 --- !u!20 &919794347 stripped
 Camera:
@@ -1350,7 +1346,7 @@ PrefabInstance:
     - target: {fileID: 3161240315737012612, guid: 3c75750bb28914f49afbf1141916e56c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.64000046
+      value: 0.6400005
       objectReference: {fileID: 0}
     - target: {fileID: 3161240315737012612, guid: 3c75750bb28914f49afbf1141916e56c,
         type: 3}

@@ -13,7 +13,6 @@ public interface IBehavior
 
 public class Role : MonoBehaviour
 {
-    [SerializeField] public AllRoles allRoles;
     [SerializeField] private InfectTargets role;
 
     private InfectTargets _originalRole;
@@ -35,12 +34,12 @@ public class Role : MonoBehaviour
         _originalRole = role;
         _renderer = transform.GetComponent<MeshRenderer>();
 
-        if (role == allRoles.clean)
+        if (role == role.allRoles.clean)
         {
             _roleBehavior = new CleanBehaviour(this);
         }
 
-        if (role == allRoles.cleaner)
+        if (role == role.allRoles.cleaner)
         {
             _roleBehavior = new CleanerBehaviour(this);
         }

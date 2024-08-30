@@ -12,20 +12,20 @@ public class CleanBehaviour : AbstractBehaviour, IBehavior
 
     public void OnCollisionAction(Role obj)
     {
-        if (obj.RoleTargets == ParentRole.allRoles.player)
+        if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.player)
         {
-            ParentRole.RoleTargets = ParentRole.allRoles.infected;
+            ParentRole.RoleTargets = ParentRole.RoleTargets.allRoles.infected;
             ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);
         }
 
-        if (obj.RoleTargets == ParentRole.allRoles.infected)
+        if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.infected)
         {
-            ParentRole.RoleTargets = ParentRole.allRoles.infected;
+            ParentRole.RoleTargets = ParentRole.RoleTargets.allRoles.infected;
             ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);
             return;
         }
 
-        if (obj.RoleTargets == ParentRole.allRoles.cleaner)
+        if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.cleaner)
         {
             ParentRole.RoleTargets = ParentRole.OriginalRole;
             ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);
@@ -45,13 +45,13 @@ public class CleanerBehaviour : AbstractBehaviour, IBehavior
 
     public void OnCollisionAction(Role obj)
     {
-        if (obj.RoleTargets == ParentRole.allRoles.player)
+        if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.player)
         {
-            ParentRole.RoleTargets = ParentRole.allRoles.infected;
+            ParentRole.RoleTargets = ParentRole.RoleTargets.allRoles.infected;
             ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);
         }
 
-        if (obj.RoleTargets == ParentRole.allRoles.cleaner)
+        if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.cleaner)
         {
             ParentRole.RoleTargets = ParentRole.OriginalRole;
             ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);

@@ -7,5 +7,6 @@ public class InfectTargets :ScriptableObject
 {
     public Material material;
     public List<InfectTargets> targets = new();
-    
+    public AllRoles allRoles;
+
 }
