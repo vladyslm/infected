@@ -10,10 +10,11 @@ public class Manager : MonoBehaviour
     [SerializeField] private AllRoles allRoles;
     [SerializeField] private Counters counters;
     [Header("Events")] [SerializeField] private UnityEvent onUpdateCounters;
+    [SerializeField] private UnityEvent onLevelComplete;
 
-    private float _cleaned = 0;
-    private float _clean = 0;
-    private float _infected = 0;
+    private int _cleaned = 0;
+    private int _clean = 0;
+    private int _infected = 0;
 
     private Role[] _roles = { };
 
@@ -75,6 +76,10 @@ public class Manager : MonoBehaviour
         counters.clean = _clean;
         counters.cleaners = _cleaned;
         onUpdateCounters?.Invoke();
+        if (_infected == (_roles.Length - 1))
+        {
+            onLevelComplete?.Invoke();
+        }
     }
 
     public void OnInfection()
