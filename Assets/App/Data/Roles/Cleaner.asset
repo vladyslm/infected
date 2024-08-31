@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3268bd7c95ab78469f4fbfc9cb21b03, type: 3}
   m_Name: Cleaner
   m_EditorClassIdentifier: 
+  character: {fileID: 1524411113276028, guid: 848a48f3aead39b40bc7664dd60a848b, type: 3}
   material: {fileID: 2100000, guid: b386e9032fc0b604ea9415e9e9e19c7e, type: 2}
   targets:
   - {fileID: 11400000, guid: 44ec3d85bd9e78741b4217f48aa2c72e, type: 2}

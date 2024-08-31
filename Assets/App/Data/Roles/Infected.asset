@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3268bd7c95ab78469f4fbfc9cb21b03, type: 3}
   m_Name: Infected
   m_EditorClassIdentifier: 
+  character: {fileID: 1931298151966786, guid: 95e4469a3bc99384ca9e028482b8a7a4, type: 3}
   material: {fileID: 2100000, guid: d6ebc86a44dcba64d9dd39fd2a37eddd, type: 2}
   targets:
   - {fileID: 11400000, guid: b00c0d351a33ef04aab3c0dabe562e89, type: 2}

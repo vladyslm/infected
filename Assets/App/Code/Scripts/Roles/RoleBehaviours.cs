@@ -15,20 +15,20 @@ public class CleanBehaviour : AbstractBehaviour, IBehavior
         if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.player)
         {
             ParentRole.RoleTargets = ParentRole.RoleTargets.allRoles.infected;
-            ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);
+            ParentRole.CheckCharacter();
         }
 
         if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.infected)
         {
             ParentRole.RoleTargets = ParentRole.RoleTargets.allRoles.infected;
-            ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);
+            ParentRole.CheckCharacter();
             return;
         }
 
         if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.cleaner)
         {
             ParentRole.RoleTargets = ParentRole.OriginalRole;
-            ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);
+            ParentRole.CheckCharacter();
         }
     }
 }
@@ -48,13 +48,13 @@ public class CleanerBehaviour : AbstractBehaviour, IBehavior
         if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.player)
         {
             ParentRole.RoleTargets = ParentRole.RoleTargets.allRoles.infected;
-            ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);
+            ParentRole.CheckCharacter();
         }
 
         if (obj.RoleTargets == ParentRole.RoleTargets.allRoles.cleaner)
         {
             ParentRole.RoleTargets = ParentRole.OriginalRole;
-            ParentRole.ApplyMaterial(ParentRole.RoleTargets.material);
+            ParentRole.CheckCharacter();
         }
     }
 }

@@ -13,8 +13,10 @@ public interface IBehavior
 
 public class Role : MonoBehaviour
 {
+    [SerializeField] private GameObject characterContainer;
     [SerializeField] private InfectTargets role;
     [SerializeField] private UnityEvent onCollisionAction;
+    [SerializeField] private ParticleSystem effect;
 
     private InfectTargets _originalRole;
     private Renderer _renderer;
@@ -44,6 +46,10 @@ public class Role : MonoBehaviour
         {
             _roleBehavior = new CleanerBehaviour(this);
         }
+
+        if (transform.CompareTag("Player")) return;
+
+        CheckCharacter();
     }
 
 
@@ -67,5 +73,24 @@ public class Role : MonoBehaviour
     public void ApplyMaterial(Material material)
     {
         _renderer.material = material;
+    }
+
+    private void ApplyCharacter()
+    {
+        foreach (Transform child in characterContainer.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        effect.Play();
+        Instantiate(role.character, characterContainer.transform);
+    }
+
+    public void CheckCharacter()
+    {
+        if (characterContainer.transform.GetChild(0).name != role.character.name)
+        {
+            ApplyCharacter();
+        }
     }
 }

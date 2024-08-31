@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3268bd7c95ab78469f4fbfc9cb21b03, type: 3}
   m_Name: Clean
   m_EditorClassIdentifier: 
+  character: {fileID: 1931298151966786, guid: 19f9da0f7dc02a8428d92dd9c7faa1f6, type: 3}
   material: {fileID: 2100000, guid: e32d2e4b78c2e2140ba2b8678790d36a, type: 2}
   targets: []
   allRoles: {fileID: 11400000, guid: ee7d1ae5d6f937a4ab1e724ebf005e9b, type: 2}

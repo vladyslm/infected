@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8410471507268379575}
   - component: {fileID: 3609622809876518544}
   m_Layer: 0
-  m_Name: EnemyContainer
+  m_Name: EnemyContainer_Clean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,6 +182,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4035222792055163475, guid: ec22a4a3cd7f40942adfc3eee7766e31,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5112403345841327294, guid: ec22a4a3cd7f40942adfc3eee7766e31,
         type: 3}
       propertyPath: m_Range
@@ -247,6 +252,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5112403345868107846, guid: ec22a4a3cd7f40942adfc3eee7766e31,
+        type: 3}
+      propertyPath: clearBehavior
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5112403345868107898, guid: ec22a4a3cd7f40942adfc3eee7766e31,
         type: 3}
       propertyPath: m_Name
@@ -256,6 +266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112403345868107899, guid: ec22a4a3cd7f40942adfc3eee7766e31,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5112403345868107899, guid: ec22a4a3cd7f40942adfc3eee7766e31,
         type: 3}
@@ -372,6 +387,11 @@ PrefabInstance:
       propertyPath: InitialModule.startSizeZ.minCurve.m_RotationOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5112403347238810568, guid: ec22a4a3cd7f40942adfc3eee7766e31,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5112403347238810575, guid: ec22a4a3cd7f40942adfc3eee7766e31,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -381,6 +401,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7531768400295773596, guid: ec22a4a3cd7f40942adfc3eee7766e31,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8280942166302414958, guid: ec22a4a3cd7f40942adfc3eee7766e31,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
