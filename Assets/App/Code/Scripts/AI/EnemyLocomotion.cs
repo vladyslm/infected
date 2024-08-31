@@ -50,7 +50,9 @@ public class EnemyLocomotion : MonoBehaviour
     {
         if (_isReadyToJump)
         {
-            if (_rb.transform.forward != _randDir)
+            var angle = Vector3.Angle(_rb.transform.forward, _randDir);
+
+            if (angle > 5)
             {
                 _rb.AddForce(Vector3.up * upImpulse, ForceMode.Impulse);
                 _isReadyToJump = false;
@@ -82,15 +84,12 @@ public class EnemyLocomotion : MonoBehaviour
         return new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f)).normalized;
     }
 
-    
-    // Events
-    private void OnCollisionEnter(Collision other)
+
+    private void OnCollisionStay(Collision other)
     {
-        if (other.transform.CompareTag("Ground"))
-        {
-            _isGrounded = true;
-            _isReadyToJump = true;
-        }
+        if (!other.transform.CompareTag("Ground")) return;
+        _isGrounded = true;
+        _isReadyToJump = true;
     }
 
     private void OnCollisionExit(Collision other)
