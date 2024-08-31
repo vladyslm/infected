@@ -52,27 +52,9 @@ public class Role : MonoBehaviour
         CheckCharacter();
     }
 
-
-    private void OnCollisionEnter(Collision other)
-    {
-        // Debug.Log($"{transform.name} collides with {other.transform.name}");
-        var target = other.transform.GetComponent<Role>();
-        if (target == null) return;
-        if (!role.targets.Contains(target.RoleTargets)) return;
-        // Debug.Log($"{transform.name} says {other.transform.name} is a valid target");
-        target.OnCollisionAction(this);
-        onCollisionAction?.Invoke();
-    }
-
     public void OnCollisionAction(Role obj)
     {
-        // Debug.Log($"{this.name} collides with: {obj} that has {obj.role}");
         _roleBehavior.OnCollisionAction(obj);
-    }
-
-    public void ApplyMaterial(Material material)
-    {
-        _renderer.material = material;
     }
 
     private void ApplyCharacter()
@@ -92,5 +74,14 @@ public class Role : MonoBehaviour
         {
             ApplyCharacter();
         }
+    }
+    
+    private void OnCollisionEnter(Collision other)
+    {
+        var target = other.transform.GetComponent<Role>();
+        if (target == null) return;
+        if (!role.targets.Contains(target.RoleTargets)) return;
+        target.OnCollisionAction(this);
+        onCollisionAction?.Invoke();
     }
 }

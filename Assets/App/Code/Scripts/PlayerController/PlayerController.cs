@@ -23,15 +23,8 @@ public class PlayerController : MonoBehaviour
     {
         movementAction.action.performed += OnActionMove;
         movementAction.action.canceled += OnActionMoveEnd;
-
-        // look.action.performed += OnLookAction;
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     private void FixedUpdate()
     {
@@ -41,33 +34,13 @@ public class PlayerController : MonoBehaviour
     private void OnActionMove(InputAction.CallbackContext ctx)
     {
         _direction = ctx.ReadValue<Vector2>();
-        // Debug.Log(_direction);
     }
 
     private void OnActionMoveEnd(InputAction.CallbackContext _)
     {
         _direction = Vector2.zero;
     }
-
-    // private void MovePlayer()
-    // {
-    //     var forward = playerCamera.transform.forward.normalized;
-    //     var right = playerCamera.transform.right.normalized;
-    //
-    //     var forwardRel = _direction.y * forward;
-    //     var rightRel = _direction.x * right;
-    //     
-    //
-    //     var cameraRelatedDirection = (forwardRel + rightRel) * speed;
-    //     // var cameraRelatedDirection = (forwardRel + rightRel);
-    //     rigidBody.velocity = new Vector3(cameraRelatedDirection.x, rigidBody.velocity.y, cameraRelatedDirection.z);
-    //     // rigidBody.AddForce(cameraRelatedDirection.x * speed * Time.deltaTime, rigidBody.velocity.y,cameraRelatedDirection.z * speed * Time.deltaTime);
-    //     
-    //     
-    //     // rigidBody.AddForce(cameraRelatedDirection);
-    // }
     
-    // TODO: update 
     private void MovePlayer()
     {
         var unitGoal = GetCameraRelativeDirection();

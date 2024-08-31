@@ -18,8 +18,7 @@ public class EnemyLocomotion : MonoBehaviour
 
     private Vector3 _randDir = Vector3.zero;
 
-
-    // Start is called before the first frame update
+    
     private void Awake()
     {
         _randDir = GetRandomDirection();
